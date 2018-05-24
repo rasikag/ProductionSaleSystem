@@ -10,6 +10,7 @@ namespace ProductionSaleSystem
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
