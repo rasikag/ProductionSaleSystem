@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductService.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,7 @@ namespace ProductService
         bool isCustomerPreferred)
         {
             var discount = isCustomerPreferred ? .95m : 1;
-            var products = (from p in this.objectContext
-            .Products
+            var products = (from p in this.objectContext.Products
                             where p.IsFeatured
                             select p).AsEnumerable();
             return from p in products

@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommerceObjectContext.cs" />
     <Compile Include="ProdService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductionSaleSystem\ProductionSaleSystem.csproj">
+      <Project>{27ae7b36-3093-42d7-acd7-908f06e860f0}</Project>
+      <Name>ProductionSaleSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
