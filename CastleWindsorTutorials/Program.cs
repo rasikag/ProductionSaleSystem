@@ -13,6 +13,8 @@ namespace CastleWindsorTutorials
                                          ImplementedBy<CompositionRoot>());
             container.Register(Component.For<IConsoleWriter>().
                                          ImplementedBy<ConsoleWriter>());
+            container.Register(Component.For<ISingletonDemo>().
+                                         ImplementedBy<SingletonDemo>());
             var root = container.Resolve<ICompositionRoot>();
 
             root.LogMessage("This is simple message");

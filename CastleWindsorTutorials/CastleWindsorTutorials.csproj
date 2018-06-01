@@ -55,8 +55,10 @@
     <Compile Include="ConsoleWriter.cs" />
     <Compile Include="ICompositionRoot.cs" />
     <Compile Include="IConsoleWriter.cs" />
+    <Compile Include="ISingletonDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
